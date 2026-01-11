@@ -6,7 +6,6 @@
 
   /* Secondary / accent colors */
   --color-accent: #ff9800; /* orange */
-  --color-accent-dark: #f57c00;
   --color-accent-light: #ffe0b2;
 
   /* Neutral palette */
@@ -15,12 +14,12 @@
 
   /* Text colors */
   --color-text: #333333;
-  --color-text: #666666;
   --color-text-inverse: #ffffff;
 
   /* Neutral colors */
   --darkslategray: #4b5563;
   --border-gray: #e5e7eb;
+  --black: #000000;
 
   --font-heading: "Poppins", sans-serif;
   --font-body: "Roboto", sans-serif;
@@ -50,8 +49,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: var(--color-primary);
-  color: var(--color-text-inverse);
+  background-color: var(--color-primary-light);
   padding: 0.5rem;
   position: relative;
 }
@@ -65,6 +63,7 @@ header {
 .site-name {
   font-size: 1.5rem;
   font-weight: bold;
+  color: var(--darkslategray);
 }
 
 /* Hamburger button */
@@ -106,7 +105,7 @@ nav li {
 }
 
 nav a {
-  color: var(--color-text-inverse);
+  color: var(--black);
   text-decoration: none;
   font-size: 1.2rem;
 }
@@ -143,10 +142,8 @@ button {
 main {
   padding: 2rem 1rem;
 }
-main h1 {
-}
-/* Section  */
 
+/* Section  */
 section.section-header h2 {
   text-align: center;
   color: var(--color-text-inverse);
