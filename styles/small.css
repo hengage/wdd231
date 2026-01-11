@@ -196,6 +196,14 @@ section#courses div:nth-child(1) {
   border-color: #4caf50;
 }
 
+#filters button {
+  cursor: pointer;
+}
+
+.filters button:hover {
+  background-color: var(--color-primary-dark);
+}
+
 /* Course grid */
 #course-list {
   display: grid;
