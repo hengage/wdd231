@@ -1,3 +1,119 @@
+:root {
+  /* Primary brand colors */
+  --color-primary: #4caf50; /* green */
+  --color-primary-dark: #388e3c;
+  --color-primary-light: #c8e6c9;
+
+  /* Secondary / accent colors */
+  --color-accent: #ff9800; /* orange */
+  --color-accent-dark: #f57c00;
+  --color-accent-light: #ffe0b2;
+
+  /* Neutral palette */
+  --color-bg: #f9f9f9;
+  --color-border: #cccccc;
+
+  /* Text colors */
+  --color-text: #333333;
+  --color-text: #666666;
+  --color-text-inverse: #ffffff;
+
+  /* Neutral colors */
+  --darkslategray: #4b5563;
+  --border-gray: #e5e7eb;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--color-bg);
+}
+
+/* Header layout */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--color-primary);
+  color: var(--color-text-inverse);
+  padding: 0.5rem;
+  position: relative;
+}
+
+/* Logo and site name */
+.logo {
+  height: 80px;
+  margin-right: 0.5rem;
+}
+
+.site-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Hamburger button */
+#menu-button {
+  background: none;
+  border: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Show only nav icon by default */
+.open-icon {
+  display: block;
+}
+.close-icon {
+  display: none;
+}
+
+/* Nav menu */
+nav {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 100%;
+  display: none;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  margin-bottom: 1rem;
+}
+
+nav a {
+  color: var(--color-text-inverse);
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+/* Toggle nav open */
+nav.open {
+  display: flex;
+  background-color: var(--color-primary-dark, #388e3c);
+}
+
+/* Toggle icons */
+#menu-button.open .open-icon {
+  display: none;
+}
+
+#menu-button.open .close-icon {
+  display: block;
+}
+
 #courses {
   margin: 2rem 0;
 }

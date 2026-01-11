@@ -1,0 +1,39 @@
+/* Large screen layout */
+@media (min-width: 768px) {
+  header {
+    padding: 1rem;
+  }
+
+  .logo {
+    height: 100px;
+    margin-right: 0.5rem;
+  }
+
+  #menu-button {
+    display: none;
+  }
+
+  nav {
+    position: static;
+    display: flex;
+    flex-direction: row;
+    background: none;
+    width: auto;
+    padding: 0;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    background: none;
+  }
+
+  nav li {
+    margin: 0 1rem;
+  }
+
+  nav a {
+    font-size: 1.3rem;
+    color: var(--color-text-inverse);
+  }
+}
