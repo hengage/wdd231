@@ -60,7 +60,7 @@
     <main>
       <h1>Home</h1>
 
-      <section id="about-me">
+      <section id="about-me" class="section-header">
         <h2>About Me</h2>
         <p>
           My name is Henry Chizoba. I am a software development student at
@@ -75,31 +75,28 @@
         </p>
       </section>
 
-      <section id="student-photo">
+      <section id="student-photo" class="section-header">
         <h2>Student Photo</h2>
-        <img
-          src="images/henry-chizoba.png"
-          alt="Student Photo"
-          width="200"
-          height="200"
-        />
+        <img src="images/henry-chizoba.png" alt="Student Photo" />
       </section>
 
-      <section id="courses">
+      <section id="courses" class="section-header">
         <h2>Web Certificate Courses</h2>
 
-        <!-- Filter buttons -->
-        <div id="filters">
-          <button id="all">All</button>
-          <button id="wdd">WDD</button>
-          <button id="cse">CSE</button>
+        <div class="">
+          <!-- Filter buttons -->
+          <div id="filters">
+            <button id="all">All</button>
+            <button id="wdd">WDD</button>
+            <button id="cse">CSE</button>
+          </div>
+
+          <!-- Course list will be injected here via JS -->
+          <div id="course-list"></div>
+
+          <!-- Credits will be injected here via JS -->
+          <div id="credits"></div>
         </div>
-
-        <!-- Course list will be injected here via JS -->
-        <div id="course-list"></div>
-
-        <!-- Credits will be injected here via JS -->
-        <div id="credits"></div>
       </section>
     </main>
 
