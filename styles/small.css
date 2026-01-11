@@ -182,7 +182,7 @@ section#courses {
 }
 
 section#courses div:nth-child(1) {
-  margin-top: 1rem;
+  padding-top: 1.3rem;
 }
 
 .course {
@@ -194,6 +194,14 @@ section#courses div:nth-child(1) {
 .course.completed {
   background-color: #e0ffe0;
   border-color: #4caf50;
+}
+
+/* Course grid */
+#course-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  text-align: center;
 }
 
 /* Credits section */

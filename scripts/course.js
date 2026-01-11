@@ -81,7 +81,7 @@ function renderCourses(courseArray) {
     }
 
     courseItem.innerHTML = `
-      <h3>${course.subject} ${course.number}: ${course.title}</h3>
+      <h3>${course.subject} ${course.number}</h3>
     `;
 
     courseList.appendChild(courseItem);
