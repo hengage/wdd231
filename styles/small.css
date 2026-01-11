@@ -1,0 +1,23 @@
+#courses {
+  margin: 2rem 0;
+}
+
+#filters {
+  margin-bottom: 1rem;
+}
+
+button {
+  margin-right: 0.5rem;
+  padding: 0.5rem 1rem;
+}
+
+.course {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.course.completed {
+  background-color: #e0ffe0;
+  border-color: #4caf50;
+}

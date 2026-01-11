@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Henry Udeh" />
+    <meta
+      name="description"
+      content="WDD 231: Web Frontend Development I - Week 01 Assignment by Henry Chizoba Udeh"
+    />
+    <title>WDD 231: Web Frontend Development I - Henry Chizoba Udeh</title>
+    <!-- <link rel="stylesheet" href="styles/normalize.css" /> -->
+    <link rel="stylesheet" href="styles/small.css" />
+    <link rel="stylesheet" href="styles/larger.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/course.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <!-- Logo -->
+      <img src="images/henry-chizoba-logo.png" alt="Site Logo" class="logo" />
+
+      <!-- Site Name -->
+      <span class="site-name">Henry Chizoba Udeh</span>
+
+      <!-- Hamburger Menu Button -->
+      <button id="menu-button" aria-label="Toggle Navigation">
+        <img
+          src="images/navigation-bar.png"
+          alt="Navigation Menu"
+          width="40"
+          height="50"
+          loading="lazy"
+          class="nav-icon"
+        />
+        <img
+          src="images/close.png"
+          alt="Close Menu"
+          width="35"
+          height="35"
+          loading="lazy"
+          class="close-icon"
+        />
+      </button>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="chamber.html">Chamber</a></li>
+          <li><a href="final.html">Final</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Home</h1>
+      <section id="about-me">
+        <p>
+          My name is Henry Chizoba. I am a software development student at
+          BYU-Idaho with a strong interest in building practical, user-focused
+          web applications. I enjoy solving problems, learning new technologies,
+          and understanding how software systems work end-to-end. I am
+          particularly interested in backend development and how data, logic,
+          and performance come together to support real-world applications.
+          Outside of coding, I enjoy continuous learning and improving my
+          technical and problem-solving skills. I also enjoy working out to
+          maintain a healthy lifestyle.
+        </p>
+      </section>
+
+      <section id="student-photo">
+        <img src="images/henry-chizoba.png" alt="Student Photo" />
+      </section>
+
+      <section id="courses">
+        <h2>Web Certificate Courses</h2>
+
+        <!-- Filter buttons -->
+        <div id="filters">
+          <button id="all">All</button>
+          <button id="wdd">WDD</button>
+          <button id="cse">CSE</button>
+        </div>
+
+        <!-- Course list will be injected here via JS -->
+        <div id="course-list"></div>
+
+        <!-- Credits will be injected here via JS -->
+        <div id="credits"></div>
+      </section>
+    </main>
+
+    <footer>
+      <footer>
+        <div class="social-links">
+          <a
+            href="https://github.com/hengage"
+            target="_blank"
+            aria-label="GitHub"
+            ><i class="fab fa-github"></i
+          ></a>
+          <a href="https://linkedin.com/in/henrychizoba" target="_blank"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+          <a href="#">Other</a>
+        </div>
+        <p>
+          &copy; <span id="currentyear"></span> | Henry Chizoba Udeh | Nigeria
+        </p>
+        <p>Last Modification: <span id="last-modified"></span></p>
+      </footer>
+    </footer>
+  </body>
+</html>
