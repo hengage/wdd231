@@ -21,6 +21,9 @@
   /* Neutral colors */
   --darkslategray: #4b5563;
   --border-gray: #e5e7eb;
+
+  --font-heading: "Poppins", sans-serif;
+  --font-body: "Roboto", sans-serif;
 }
 
 * {
@@ -31,6 +34,15 @@
 
 body {
   background-color: var(--color-bg);
+  font-family: var(--font-body);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: var(--font-heading);
 }
 
 /* Header layout */
