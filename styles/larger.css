@@ -35,4 +35,93 @@
   nav a {
     font-size: 1.3rem;
   }
+
+  /* Main heading for larger screens */
+  main h1 {
+    font-size: 3rem;
+    text-align: center;
+    margin: 2rem 0 3rem 0;
+    color: var(--darkslategray);
+  }
+
+  /* Section styles for larger screens */
+
+  /* All main sections for larger screens */
+  section#about-me,
+  section#student-photo,
+  section#courses {
+    max-width: 800px;
+    margin: 4rem auto 2rem auto;
+    padding: 0 2rem;
+  }
+
+  /* About Me section for larger screens */
+  #about-me {
+    padding: 0 2rem;
+  }
+
+  #about-me p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    text-align: justify;
+  }
+
+  /* Student Photo section for larger screens */
+  section#student-photo {
+    padding: 0 2rem;
+  }
+
+  section#student-photo img {
+    width: 400px;
+    height: 400px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+
+  #credits {
+    font-size: 1.1rem;
+    margin-top: 1.5rem;
+  }
+
+  /* Footer styles for larger screens */
+  footer {
+    padding: 3rem 2rem;
+  }
+
+  .social-links {
+    gap: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .social-links a {
+    font-size: 1.8rem;
+  }
+
+  footer p {
+    font-size: 1rem;
+    margin: 0.8rem 0;
+  }
+
+  /* Optional: Layout footer content horizontally on larger screens */
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer .social-links {
+    order: 2;
+  }
+
+  footer p:first-of-type {
+    order: 1;
+    margin-bottom: 1rem;
+  }
+
+  footer p:last-of-type {
+    order: 3;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    opacity: 0.8;
+  }
 }
