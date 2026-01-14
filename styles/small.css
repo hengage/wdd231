@@ -116,6 +116,13 @@ nav.open {
   background-color: var(--color-primary-dark, #388e3c);
 }
 
+/* Active page/link styling */
+nav a.active {
+  color: var(--darkslategray);
+  font-weight: bold;
+  text-decoration: underline;
+}
+
 /* Toggle icons */
 #menu-button.open .open-icon {
   display: none;

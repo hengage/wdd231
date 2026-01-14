@@ -7,3 +7,6 @@ menuButton.addEventListener("click", () => {
   menuButton.classList.toggle("open");
   console.log(navMenu.classList);
 });
+
+const currentPage = document.body.dataset.page || "home";
+document.querySelector(`[data-page="${currentPage}"]`).classList.add("active");
