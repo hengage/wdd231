@@ -27,6 +27,11 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="styles/small.css" />
+    <link rel="stylesheet" href="styles/larger.css" />
   </head>
   <body>
     <header>
@@ -40,45 +45,43 @@
           <span class="site-name">Owerri Chamber of Commerce</span>
         </div>
 
-        <nav>
-          <ul>
-            <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="directory.html">Directory</a></li>
-            <li><a href="join.html">Join</a></li>
-            <li><a href="discover.html">Discover</a></li>
-          </ul>
-        </nav>
+        <div class="nav-theme-container">
+          <button id="menu-button" aria-label="Toggle Navigation">
+            <i class="fas fa-bars"></i>
+          </button>
 
-        <button class="theme-toggle" aria-label="Toggle dark mode">
-          <i class="fas fa-moon"></i>
-        </button>
+          <nav>
+            <ul>
+              <li><a href="index.html" class="active">Home</a></li>
+              <li><a href="directory.html">Directory</a></li>
+              <li><a href="join.html">Join</a></li>
+              <li><a href="discover.html">Discover</a></li>
+            </ul>
+          </nav>
+
+          <button class="theme-toggle" aria-label="Toggle dark mode">
+            <i class="fas fa-moon"></i>
+          </button>
+        </div>
       </div>
     </header>
 
     <footer>
       <div class="footer-container">
         <div class="contact-info">
-          <h3>Contact Us</h3>
-          <p>123 Main Street, Owerri, Nigeria</p>
-          <p>Phone: +234 123-456-7890</p>
-          <p>Email: info@owerrichamber.com</p>
-        </div>
-
-        <div class="footer-info">
-          <p>
-            &copy; <span id="currentyear"></span> Owerri Chamber of Commerce
-          </p>
-          <p>Henry Chizoba Udeh | WDD 231</p>
-          <p>Last Modification: <span id="last-modified"></span></p>
+          <h3>Owerri Chamber of Commerce</h3>
+          <p>123 Main Street</p>
+          <p>Owerri, Nigeria 999</p>
+          <p>info@owerrichamber.com</p>
+          <p>(234) 123-456-7890</p>
         </div>
 
         <div class="social-links">
-          <a
-            href="https://github.com/hengage"
-            target="_blank"
-            aria-label="GitHub"
-          >
-            <i class="fab fa-github"></i>
+          <a href="https://youtube.com" target="_blank" aria-label="YouTube">
+            <i class="fab fa-youtube"></i>
+          </a>
+          <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+            <i class="fab fa-twitter"></i>
           </a>
           <a
             href="https://linkedin.com/in/henrychizoba"
@@ -88,9 +91,19 @@
             <i class="fab fa-linkedin"></i>
           </a>
         </div>
+
+        <div class="project-info">
+          <p>WDD231 Class Project</p>
+          <p>Henry Chizoba Udeh</p>
+          <p>
+            &copy; <span id="currentyear"></span> Owerri Chamber of Commerce
+          </p>
+          <p>Last Modification: <span id="last-modified"></span></p>
+        </div>
       </div>
     </footer>
 
+    <script src="scripts/navigation.js" defer></script>
     <script src="../scripts/date.js" defer></script>
   </body>
 </html>
