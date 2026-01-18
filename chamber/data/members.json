@@ -1,0 +1,83 @@
+[
+  {
+    "name": "TechHub Solutions",
+    "address": "123 Innovation Drive, Owerri, Nigeria",
+    "phone": "(234) 555-0101",
+    "website": "https://techhub.com",
+    "image": "techhub.jpg",
+    "membershipLevel": 3,
+    "description": "Leading technology consulting firm specializing in software development and IT solutions."
+  },
+  {
+    "name": "Green Harvest Market",
+    "address": "45 Market Street, Owerri, Nigeria",
+    "phone": "(234) 555-0102",
+    "website": "https://greenharvest.com",
+    "image": "market.jpg",
+    "membershipLevel": 2,
+    "description": "Fresh produce market serving the community with organic fruits and vegetables."
+  },
+  {
+    "name": "Nigerian Textiles Co.",
+    "address": "78 Industrial Avenue, Owerri, Nigeria",
+    "phone": "(234) 555-0103",
+    "website": "https://nigeriantextiles.com",
+    "image": "textiles.jpg",
+    "membershipLevel": 1,
+    "description": "Traditional textile manufacturer producing quality fabrics and garments."
+  },
+  {
+    "name": "Owerri Financial Services",
+    "address": "200 Banking Road, Owerri, Nigeria",
+    "phone": "(234) 555-0104",
+    "website": "https://owerrifinance.com",
+    "image": "finance.jpg",
+    "membershipLevel": 3,
+    "description": "Comprehensive financial services including banking, loans, and investments."
+  },
+  {
+    "name": "HealthPlus Clinic",
+    "address": "15 Medical Lane, Owerri, Nigeria",
+    "phone": "(234) 555-0105",
+    "website": "https://healthplus.com",
+    "image": "clinic.jpg",
+    "membershipLevel": 2,
+    "description": "Modern healthcare facility providing primary care and specialized medical services."
+  },
+  {
+    "name": "EduBright Learning Center",
+    "address": "89 Education Boulevard, Owerri, Nigeria",
+    "phone": "(234) 555-0106",
+    "website": "https://edubright.com",
+    "image": "education.jpg",
+    "membershipLevel": 1,
+    "description": "Educational center offering tutoring and skill development programs."
+  },
+  {
+    "name": "Speedy Logistics",
+    "address": "33 Transport Way, Owerri, Nigeria",
+    "phone": "(234) 555-0107",
+    "website": "https://speedylogistics.com",
+    "image": "logistics.jpg",
+    "membershipLevel": 3,
+    "description": "Fast and reliable transportation and delivery services."
+  },
+  {
+    "name": "Bella Restaurant",
+    "address": "56 Food Court Avenue, Owerri, Nigeria",
+    "phone": "(234) 555-0108",
+    "website": "https://bellarestaurant.com",
+    "image": "restaurant.jpg",
+    "membershipLevel": 1,
+    "description": "Fine dining restaurant serving local and international cuisine."
+  },
+  {
+    "name": "FitZone Gym",
+    "address": "12 Fitness Street, Owerri, Nigeria",
+    "phone": "(234) 555-0109",
+    "website": "https://fitzone.com",
+    "image": "gym.jpg",
+    "membershipLevel": 2,
+    "description": "Modern fitness center with state-of-the-art equipment and personal training."
+  }
+]
