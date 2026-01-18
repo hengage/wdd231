@@ -4,6 +4,8 @@ document.addEventListener("DOMContentLoaded", function () {
   const listViewBtn = document.getElementById("list-view");
   const gridViewBtn = document.getElementById("grid-view");
 
+  membersContainer.classList.add("list-view");
+
   // Load members from JSON
   async function loadMembers() {
     try {
@@ -20,18 +22,16 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Display members based on current view
   function displayMembers(members) {
-    const isGridView = membersContainer.classList.contains("grid-view");
-
     membersContainer.innerHTML = "";
 
     members.forEach((member) => {
-      const memberCard = createMemberCard(member, isGridView);
+      const memberCard = createMemberCard(member);
       membersContainer.appendChild(memberCard);
     });
   }
 
   // Create member card element
-  function createMemberCard(member, isGridView) {
+  function createMemberCard(member) {
     const card = document.createElement("div");
     card.className = "member-card";
 
@@ -48,21 +48,9 @@ document.addEventListener("DOMContentLoaded", function () {
       ""
     )}/300/200.jpg`;
 
-    if (isGridView) {
-      // Grid view - compact card
-      card.innerHTML = `
-        <img src="${imageUrl}" alt="${member.name}" loading="lazy">
-        <h3>${member.name}</h3>
-        <span class="membership-level ${membershipLevel}">${membershipLevel.toUpperCase()}</span>
-        <p><strong>Address:</strong> ${member.address}</p>
-        <p><strong>Phone:</strong> ${member.phone}</p>
-        <p><strong>Website:</strong> <a href="${
-          member.website
-        }" target="_blank">${member.website}</a></p>
-      `;
-    } else {
-      // List view - detailed card
-      card.innerHTML = `
+    card.innerHTML = `
+      <img src="${imageUrl}" alt="${member.name}" loading="lazy">
+      <div class="member-details">
         <h3>${member.name}</h3>
         <span class="membership-level ${membershipLevel}">${membershipLevel.toUpperCase()}</span>
         <p><strong>Address:</strong> ${member.address}</p>
@@ -71,8 +59,8 @@ document.addEventListener("DOMContentLoaded", function () {
           member.website
         }" target="_blank">${member.website}</a></p>
         <p><strong>Description:</strong> ${member.description}</p>
-      `;
-    }
+      </div>
+    `;
 
     return card;
   }
@@ -80,16 +68,16 @@ document.addEventListener("DOMContentLoaded", function () {
   // View toggle functionality
   listViewBtn.addEventListener("click", () => {
     membersContainer.classList.remove("grid-view");
+    membersContainer.classList.add("list-view");
     listViewBtn.classList.add("active");
     gridViewBtn.classList.remove("active");
-    displayMembers(window.currentMembers);
   });
 
   gridViewBtn.addEventListener("click", () => {
+    membersContainer.classList.remove("list-view");
     membersContainer.classList.add("grid-view");
     gridViewBtn.classList.add("active");
     listViewBtn.classList.remove("active");
-    displayMembers(window.currentMembers);
   });
 
   // Initialize

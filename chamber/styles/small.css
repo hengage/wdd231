@@ -267,6 +267,36 @@ main h1 {
   margin-bottom: 0.5rem;
 }
 
+/* List view image behavior */
+.members-container.list-view .member-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.members-container.list-view .member-card .member-details {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .members-container.list-view .member-card {
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .members-container.list-view .member-card img {
+    width: 220px;
+    height: 140px;
+    margin-bottom: 0;
+    flex: 0 0 auto;
+  }
+
+  .members-container.list-view .member-card .member-details {
+    flex: 1;
+    min-width: 0;
+  }
+}
+
 .member-card p {
   margin: 0.25rem 0;
   font-size: 0.9rem;
