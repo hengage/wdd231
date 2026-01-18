@@ -52,6 +52,18 @@
     margin-bottom: 3rem;
   }
 
+  /* Grid view for member cards */
+  .members-container.grid-view {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+  }
+
+  .member-card img {
+    height: 180px;
+  }
+}
+
   .footer-container {
     flex-direction: row;
     justify-content: space-between;

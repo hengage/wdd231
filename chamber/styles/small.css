@@ -179,6 +179,109 @@ main h1 {
   color: var(--darkslategray);
 }
 
+/* View toggle buttons */
+.view-toggle {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.view-toggle button {
+  padding: 0.75rem 1.5rem;
+  border: 1px solid var(--color-border);
+  background: var(--color-bg);
+  cursor: pointer;
+  border-radius: 4px;
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+
+.view-toggle button.active {
+  background: var(--color-primary);
+  color: var(--color-text-inverse);
+  border-color: var(--color-primary);
+}
+
+.view-toggle button:hover:not(.active) {
+  background: var(--color-primary-light);
+  border-color: var(--color-primary);
+}
+
+/* Members container */
+.members-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* Member cards */
+.member-card {
+  background: var(--color-text-inverse);
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  padding: 1rem;
+  transition: box-shadow 0.3s ease;
+}
+
+.member-card:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.member-card h3 {
+  color: var(--color-primary-dark);
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.member-card .membership-level {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.member-card .membership-level.member {
+  background: #e3f2fd;
+  color: #1976d2;
+}
+
+.member-card .membership-level.silver {
+  background: #f3e5f5;
+  color: #7b1fa2;
+}
+
+.member-card .membership-level.gold {
+  background: #fff3e0;
+  color: #f57c00;
+}
+
+.member-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: 0.5rem;
+}
+
+.member-card p {
+  margin: 0.25rem 0;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.member-card a {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+.member-card a:hover {
+  text-decoration: underline;
+}
+
 /* Footer layout */
 footer {
   background-color: var(--color-primary-light);
