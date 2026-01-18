@@ -42,10 +42,16 @@ document.addEventListener("DOMContentLoaded", function () {
         ? "silver"
         : "member";
 
+    // Generate unique image for each member using picsum.photos
+    const imageUrl = `https://picsum.photos/seed/${member.name.replace(
+      /\s+/g,
+      ""
+    )}/300/200.jpg`;
+
     if (isGridView) {
       // Grid view - compact card
       card.innerHTML = `
-        <img src="images/${member.image}" alt="${member.name}" loading="lazy">
+        <img src="${imageUrl}" alt="${member.name}" loading="lazy">
         <h3>${member.name}</h3>
         <span class="membership-level ${membershipLevel}">${membershipLevel.toUpperCase()}</span>
         <p><strong>Address:</strong> ${member.address}</p>

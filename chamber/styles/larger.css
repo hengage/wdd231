@@ -64,27 +64,26 @@
   }
 }
 
-  .footer-container {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-    text-align: left;
-  }
+.footer-container {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  text-align: left;
+}
 
-  .contact-info {
-    flex: 1;
-  }
+.contact-info {
+  flex: 1;
+}
 
-  .social-links {
-    flex: 1;
-    justify-content: center;
-    margin: 0;
-  }
+.social-links {
+  flex: 1;
+  justify-content: center;
+  margin: 0;
+}
 
-  .project-info {
-    flex: 1;
-    text-align: right;
-  }
+.project-info {
+  flex: 1;
+  text-align: right;
 }
 
 @media (min-width: 1024px) {

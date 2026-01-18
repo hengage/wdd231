@@ -290,19 +290,22 @@ footer {
   margin-top: 2rem;
 }
 
-.footer-container {
+footer .footer-container {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1.5rem;
+  align-items: center;
   text-align: center;
+  width: 100%;
   max-width: 1200px;
   margin: 0 auto;
   padding: 1rem;
 }
 
-.contact-info {
+footer .contact-info {
   order: 1;
   text-align: center;
+  width: 100%;
 }
 
 .contact-info h3 {
@@ -317,12 +320,13 @@ footer {
   line-height: 1.5;
 }
 
-.social-links {
+footer .social-links {
   order: 2;
   display: flex;
   justify-content: center;
   gap: 1.5rem;
   margin: 1.5rem 0;
+  width: 100%;
 }
 
 .social-links a {
@@ -344,11 +348,12 @@ footer {
   color: var(--color-text-inverse);
 }
 
-.project-info {
+footer .project-info {
   order: 3;
   text-align: center;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
   padding-top: 1.5rem;
+  width: 100%;
 }
 
 .project-info p {
