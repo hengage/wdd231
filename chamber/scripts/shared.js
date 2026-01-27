@@ -6,15 +6,16 @@
 // Header HTML template
 function getHeaderHTML() {
   return `
-    <header>
       <div class="header-container">
         <div class="logo-section">
-          <img
-            src="images/favicon.png"
-            alt="Owerri Chamber of Commerce"
-            class="logo"
-          />
-          <span class="site-name">Owerri Chamber of Commerce</span>
+          <a href="index.html" class="logo-link">
+            <img
+              src="images/favicon.png"
+              alt="Owerri Chamber of Commerce"
+              class="logo"
+            />
+            <span class="site-name">Owerri Chamber of Commerce</span>
+          </a>
         </div>
 
         <div class="nav-theme-container">
@@ -36,7 +37,6 @@ function getHeaderHTML() {
           </button>
         </div>
       </div>
-    </header>
   `;
 }
 
