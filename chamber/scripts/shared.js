@@ -84,23 +84,17 @@ function getFooterHTML() {
 
 // Inject header into the page
 function loadHeader() {
-  const headerPlaceholder = document.getElementById("header-placeholder");
-  if (headerPlaceholder) {
-    headerPlaceholder.innerHTML = getHeaderHTML();
-  } else {
-    // If no placeholder, insert at the beginning of body
-    document.body.insertAdjacentHTML("afterbegin", getHeaderHTML());
+  const headerElement = document.querySelector("header");
+  if (headerElement) {
+    headerElement.innerHTML = getHeaderHTML();
   }
 }
 
 // Inject footer into the page
 function loadFooter() {
-  const footerPlaceholder = document.getElementById("footer-placeholder");
-  if (footerPlaceholder) {
-    footerPlaceholder.innerHTML = getFooterHTML();
-  } else {
-    // If no placeholder, append to end of body
-    document.body.insertAdjacentHTML("beforeend", getFooterHTML());
+  const footerElement = document.querySelector("footer");
+  if (footerElement) {
+    footerElement.innerHTML = getFooterHTML();
   }
 }
 
