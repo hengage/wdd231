@@ -30,6 +30,9 @@ jobs:
         uses: actions/configure-pages@v4
       - name: Create config file with API key
         run: |
+          echo "🔍 Checking for OPENWEATHER_API_KEY secret..."
+          echo "Secret value (first 5 chars): ${{ secrets.OPENWEATHER_API_KEY }}"
+
           if [ -z "${{ secrets.OPENWEATHER_API_KEY }}" ]; then
             echo "❌ ERROR: OPENWEATHER_API_KEY secret is not set!"
             echo "Please set the OPENWEATHER_API_KEY secret in GitHub repository settings."
@@ -42,6 +45,9 @@ jobs:
             exit 1
           fi
 
+          echo "📁 Creating scripts/config.js file..."
+          mkdir -p scripts
+
           echo 'window.WEATHER_CONFIG = {
             apiKey: "${{ secrets.OPENWEATHER_API_KEY }}",
             city: "Owerri",
@@ -52,8 +58,14 @@ jobs:
           echo "✅ Config created successfully with API key"
       - name: Verify config file
         run: |
-          echo "Config file contents:"
-          cat scripts/config.js
+          echo "📂 Current directory contents:"
+          ls -la
+          echo ""
+          echo "📂 Scripts directory contents:"
+          ls -la scripts/ || echo "Scripts directory not found"
+          echo ""
+          echo "📄 Config file contents:"
+          cat scripts/config.js || echo "Config file not found"
           echo ""
           echo "✅ API key validation passed"
       - name: Upload artifact
