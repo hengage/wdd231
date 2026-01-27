@@ -45,8 +45,8 @@ jobs:
             exit 1
           fi
 
-          echo "📁 Creating scripts/config.js file..."
-          mkdir -p scripts
+          echo "📁 Creating chamber/scripts/config.js file..."
+          mkdir -p chamber/scripts
 
           echo 'window.WEATHER_CONFIG = {
             apiKey: "${{ secrets.OPENWEATHER_API_KEY }}",
@@ -54,18 +54,21 @@ jobs:
             country: "NG",
             units: "metric",
             lang: "en"
-          };' > scripts/config.js
+          };' > chamber/scripts/config.js
           echo "✅ Config created successfully with API key"
       - name: Verify config file
         run: |
           echo "📂 Current directory contents:"
           ls -la
           echo ""
-          echo "📂 Scripts directory contents:"
-          ls -la scripts/ || echo "Scripts directory not found"
+          echo "📂 Chamber directory contents:"
+          ls -la chamber/ || echo "Chamber directory not found"
+          echo ""
+          echo "📂 Chamber scripts directory contents:"
+          ls -la chamber/scripts/ || echo "Chamber scripts directory not found"
           echo ""
           echo "📄 Config file contents:"
-          cat scripts/config.js || echo "Config file not found"
+          cat chamber/scripts/config.js || echo "Config file not found"
           echo ""
           echo "✅ API key validation passed"
       - name: Upload artifact
