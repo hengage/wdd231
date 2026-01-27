@@ -40,42 +40,13 @@
     <link rel="stylesheet" href="styles/small.css" />
     <link rel="stylesheet" href="styles/larger.css" />
 
+    <script src="scripts/shared.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/members.js" defer></script>
     <script src="scripts/date.js" defer></script>
   </head>
   <body>
-    <header>
-      <div class="header-container">
-        <div class="logo-section">
-          <img
-            src="images/favicon.png"
-            alt="Owerri Chamber of Commerce"
-            class="logo"
-          />
-          <span class="site-name">Owerri Chamber of Commerce</span>
-        </div>
-
-        <div class="nav-theme-container">
-          <button id="menu-button" aria-label="Toggle Navigation">
-            <i class="fas fa-bars"></i>
-          </button>
-
-          <nav>
-            <ul>
-              <li><a href="index.html" class="active">Home</a></li>
-              <li><a href="directory.html">Directory</a></li>
-              <li><a href="join.html">Join</a></li>
-              <li><a href="discover.html">Discover</a></li>
-            </ul>
-          </nav>
-
-          <button class="theme-toggle" aria-label="Toggle dark mode">
-            <i class="fas fa-moon"></i>
-          </button>
-        </div>
-      </div>
-    </header>
+    <!-- Header will be injected by shared.js -->
 
     <main>
       <h1>Members Directory</h1>
@@ -90,41 +61,6 @@
       </div>
     </main>
 
-    <footer>
-      <div class="footer-container">
-        <div class="contact-info">
-          <h2>Owerri Chamber of Commerce</h2>
-          <p>123 Main Street</p>
-          <p>Owerri, Nigeria 999</p>
-          <p>info@owerrichamber.com</p>
-          <p>(234) 123-456-7890</p>
-        </div>
-
-        <div class="social-links">
-          <a href="https://youtube.com" target="_blank" aria-label="YouTube">
-            <i class="fab fa-youtube"></i>
-          </a>
-          <a href="https://twitter.com" target="_blank" aria-label="Twitter">
-            <i class="fab fa-twitter"></i>
-          </a>
-          <a
-            href="https://linkedin.com/in/henrychizoba"
-            target="_blank"
-            aria-label="LinkedIn"
-          >
-            <i class="fab fa-linkedin"></i>
-          </a>
-        </div>
-
-        <div class="project-info">
-          <p>WDD231 Class Project</p>
-          <p>Henry Chizoba Udeh</p>
-          <p>
-            &copy; <span id="currentyear"></span> Owerri Chamber of Commerce
-          </p>
-          <p>Last Modification: <span id="last-modified"></span></p>
-        </div>
-      </div>
-    </footer>
+    <!-- Footer will be injected by shared.js -->
   </body>
 </html>
