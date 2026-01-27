@@ -14,8 +14,8 @@ function getHeaderHTML() {
               alt="Owerri Chamber of Commerce"
               class="logo"
             />
-            <span class="site-name">Owerri Chamber of Commerce</span>
           </a>
+          <span class="site-name">Owerri Chamber of Commerce</span>
         </div>
 
         <div class="nav-theme-container">
