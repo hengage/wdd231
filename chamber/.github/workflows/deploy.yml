@@ -30,6 +30,18 @@ jobs:
         uses: actions/configure-pages@v4
       - name: Create config file with API key
         run: |
+          if [ -z "${{ secrets.OPENWEATHER_API_KEY }}" ]; then
+            echo "❌ ERROR: OPENWEATHER_API_KEY secret is not set!"
+            echo "Please set the OPENWEATHER_API_KEY secret in GitHub repository settings."
+            exit 1
+          fi
+
+          if [ "${{ secrets.OPENWEATHER_API_KEY }}" = "demo_key" ] || [ "${{ secrets.OPENWEATHER_API_KEY }}" = "" ]; then
+            echo "❌ ERROR: OPENWEATHER_API_KEY is not properly configured!"
+            echo "Please update the OPENWEATHER_API_KEY secret with a valid API key."
+            exit 1
+          fi
+
           echo 'window.WEATHER_CONFIG = {
             apiKey: "${{ secrets.OPENWEATHER_API_KEY }}",
             city: "Owerri",
@@ -37,6 +49,13 @@ jobs:
             units: "metric",
             lang: "en"
           };' > scripts/config.js
+          echo "✅ Config created successfully with API key"
+      - name: Verify config file
+        run: |
+          echo "Config file contents:"
+          cat scripts/config.js
+          echo ""
+          echo "✅ API key validation passed"
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
