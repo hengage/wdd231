@@ -395,7 +395,7 @@ footer .project-info {
 
 /* Hero Section */
 .hero-section {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url("https://picsum.photos/seed/owerri-chamber/1200/400.jpg") center/cover;
   min-height: 60vh;
   display: flex;
@@ -411,27 +411,34 @@ footer .project-info {
   font-size: 2.5rem;
   margin-bottom: 1rem;
   color: var(--color-bg-white);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  font-weight: 700;
 }
 
 .hero-content p {
   font-size: 1.2rem;
   margin-bottom: 2rem;
   color: var(--color-bg-white);
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+  font-weight: 500;
 }
 
 .cta-button {
   display: inline-block;
-  background-color: var(--color-primary);
+  background-color: var(--color-primary-dark);
   color: var(--color-bg-white);
   padding: 1rem 2rem;
   text-decoration: none;
   border-radius: 5px;
-  font-weight: 500;
+  font-weight: 600;
   transition: background-color 0.3s ease;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  border: 2px solid var(--color-primary-dark);
 }
 
 .cta-button:hover {
-  background-color: var(--color-primary-dark);
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
 }
 
 /* Events Section */
@@ -467,9 +474,10 @@ footer .project-info {
 .event-date,
 .event-time,
 .event-location {
-  color: var(--color-text-light);
+  color: var(--color-text);
   font-size: 0.9rem;
   margin: 0.25rem 0;
+  font-weight: 500;
 }
 
 /* Weather Section */
@@ -511,8 +519,9 @@ footer .project-info {
 }
 
 .description {
-  color: var(--color-text-light);
+  color: var(--color-text);
   text-transform: capitalize;
+  font-weight: 500;
 }
 
 .weather-forecast {
@@ -582,10 +591,11 @@ footer .project-info {
 }
 
 .spotlight-info p {
-  color: var(--color-text-light);
+  color: var(--color-text);
   font-size: 0.9rem;
   margin: 0.25rem 0;
   line-height: 1.4;
+  font-weight: 400;
 }
 
 .spotlight-info .membership-level {
@@ -595,6 +605,6 @@ footer .project-info {
 
 .loading-message {
   text-align: center;
-  color: var(--color-text-light);
+  color: var(--color-text);
   font-style: italic;
 }
