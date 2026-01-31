@@ -763,7 +763,7 @@ footer .project-info {
 }
 
 .membership-type {
-  color: var(--color-text-light);
+  color: var(--color-primary-dark);
   font-style: italic;
   margin-bottom: 0.5rem;
 }
@@ -797,11 +797,11 @@ footer .project-info {
 }
 
 .membership-card[data-membership="np"] .membership-price {
-  color: var(--color-np);
+  color: var(--color-primary-dark);
 }
 
 .membership-card[data-membership="np"] .card-link {
-  color: var(--color-np);
+  color: var(--color-primary-dark);
   border-color: var(--color-np);
 }
 
@@ -815,11 +815,11 @@ footer .project-info {
 }
 
 .membership-card[data-membership="bronze"] .membership-price {
-  color: var(--color-bronze);
+  color: var(--color-primary-dark);
 }
 
 .membership-card[data-membership="bronze"] .card-link {
-  color: var(--color-bronze);
+  color: var(--color-primary-dark);
   border-color: var(--color-bronze);
 }
 
@@ -833,11 +833,11 @@ footer .project-info {
 }
 
 .membership-card[data-membership="silver"] .membership-price {
-  color: var(--color-silver);
+  color: var(--darkslategray);
 }
 
 .membership-card[data-membership="silver"] .card-link {
-  color: var(--color-silver);
+  color: var(--darkslategray);
   border-color: var(--color-silver);
 }
 
@@ -851,11 +851,11 @@ footer .project-info {
 }
 
 .membership-card[data-membership="gold"] .membership-price {
-  color: var(--color-gold);
+  color: var(--color-primary-dark);
 }
 
 .membership-card[data-membership="gold"] .card-link {
-  color: var(--color-gold);
+  color: var(--color-primary-dark);
   border-color: var(--color-gold);
 }
 
