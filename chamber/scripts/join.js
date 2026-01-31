@@ -20,7 +20,6 @@ function openModal(modalId) {
   }
 }
 
-// Initialize join page
 document.addEventListener("DOMContentLoaded", function () {
   setTimestamp();
 
@@ -31,6 +30,17 @@ document.addEventListener("DOMContentLoaded", function () {
       e.preventDefault();
       const modalId = this.getAttribute("href").substring(1); // Remove # from href
       openModal(modalId);
+    });
+  });
+
+  // Add click event listeners to modal close buttons
+  const closeButtons = document.querySelectorAll(".modal-close-btn");
+  closeButtons.forEach((button) => {
+    button.addEventListener("click", function () {
+      const dialog = this.closest("dialog");
+      if (dialog) {
+        dialog.close();
+      }
     });
   });
 });
