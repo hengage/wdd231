@@ -251,5 +251,5 @@ template {
 
 /* Fix Font Awesome CSS validation error */
 .fa-rotate-by {
-  --fa-rotate-angle: 0deg;
+  transform: none !important;
 }
