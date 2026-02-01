@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Thank you for joining the Owerri Chamber of Commerce"
+    />
+    <meta
+      name="keywords"
+      content="Owerri chamber, thank you, membership confirmation, Nigeria commerce"
+    />
+    <meta name="author" content="Owerri Chamber of Commerce" />
+
+    <!-- Open Graph Meta Tags -->
+    <meta
+      property="og:title"
+      content="Thank You - Owerri Chamber of Commerce"
+    />
+    <meta
+      property="og:description"
+      content="Thank you for your membership application to the Owerri Chamber of Commerce"
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://hengage.github.io/wdd231/chamber/thankyou.html"
+    />
+    <meta
+      property="og:image"
+      content="https://hengage.github.io/wdd231/chamber/images/og-image.jpg"
+    />
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Thank You - Owerri Chamber of Commerce"
+    />
+    <meta
+      name="twitter:description"
+      content="Thank you for your membership application"
+    />
+    <meta
+      name="twitter:image"
+      content="https://hengage.github.io/wdd231/chamber/images/og-image.jpg"
+    />
+
+    <title>Thank You | Owerri Chamber of Commerce</title>
+
+    <!-- Preconnect to external domains -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Google Fonts -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- Local Stylesheets -->
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="styles/small.css" />
+    <link rel="stylesheet" href="styles/larger.css" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.png" type="image/png" />
+    <link rel="apple-touch-icon" href="images/favicon.png" />
+  </head>
+  <body>
+    <header>
+      <!-- Header content will be injected by shared.js -->
+    </header>
+
+    <main>
+      <h1>Thank You for Joining!</h1>
+
+      <section class="thankyou-section">
+        <div class="thankyou-message">
+          <h2>Membership Application Received</h2>
+          <p>
+            Thank you for your interest in joining the Owerri Chamber of
+            Commerce. We have received your application and will review it
+            shortly.
+          </p>
+        </div>
+
+        <div class="application-details">
+          <h3>Your Application Details</h3>
+          <div class="thankyou-details-grid">
+            <div class="thankyou-detail-item">
+              <strong>Name:</strong>
+              <span id="displayName"></span>
+            </div>
+            <div class="thankyou-detail-item">
+              <strong>Email:</strong>
+              <span id="displayEmail"></span>
+            </div>
+            <div class="thankyou-detail-item">
+              <strong>Phone:</strong>
+              <span id="displayPhone"></span>
+            </div>
+            <div class="thankyou-detail-item">
+              <strong>Business/Organization:</strong>
+              <span id="displayBusiness"></span>
+            </div>
+            <div class="thankyou-detail-item">
+              <strong>Membership Level:</strong>
+              <span id="displayMembership"></span>
+            </div>
+            <div class="thankyou-detail-item">
+              <strong>Application Date:</strong>
+              <span id="displayTimestamp"></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="next-steps">
+          <h3>What Happens Next?</h3>
+          <ul>
+            <li>
+              Our team will review your application within 2-3 business days
+            </li>
+            <li>
+              You will receive a confirmation email with your membership details
+            </li>
+            <li>Your business will be added to our member directory</li>
+            <li>You'll gain access to exclusive member benefits and events</li>
+          </ul>
+        </div>
+
+        <div class="action-buttons">
+          <a href="index.html" class="cta-button">Return to Homepage</a>
+          <a href="join.html" class="secondary-button"
+            >Submit Another Application</a
+          >
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <!-- Footer content will be injected by shared.js -->
+    </footer>
+
+    <!-- Scripts -->
+    <script src="scripts/shared.js" defer></script>
+    <script src="scripts/config.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script>
+      // Display form data from URL parameters
+      document.addEventListener("DOMContentLoaded", function () {
+        const urlParams = new URLSearchParams(window.location.search);
+
+        // Get form data
+        const firstName = urlParams.get("firstName") || "";
+        const lastName = urlParams.get("lastName") || "";
+        const email = urlParams.get("email") || "";
+        const phone = urlParams.get("phone") || "";
+        const businessName = urlParams.get("businessName") || "";
+        const membershipLevel = urlParams.get("membershipLevel") || "";
+        const timestamp = urlParams.get("timestamp") || "";
+
+        // Display data
+        document.getElementById("displayName").textContent =
+          `${firstName} ${lastName}`.trim() || "Not provided";
+        document.getElementById("displayEmail").textContent =
+          email || "Not provided";
+        document.getElementById("displayPhone").textContent =
+          phone || "Not provided";
+        document.getElementById("displayBusiness").textContent =
+          businessName || "Not provided";
+
+        // Format membership level
+        const membershipText = {
+          np: "NP Membership (Non-Profit)",
+          bronze: "Bronze Membership",
+          silver: "Silver Membership",
+          gold: "Gold Membership",
+        };
+        document.getElementById("displayMembership").textContent =
+          membershipText[membershipLevel] || "Not selected";
+
+        // Format timestamp
+        if (timestamp) {
+          const date = new Date(timestamp);
+          document.getElementById("displayTimestamp").textContent =
+            date.toLocaleDateString("en-US", {
+              year: "numeric",
+              month: "long",
+              day: "numeric",
+              hour: "2-digit",
+              minute: "2-digit",
+            });
+        } else {
+          document.getElementById("displayTimestamp").textContent =
+            "Not available";
+        }
+      });
+    </script>
+  </body>
+</html>
