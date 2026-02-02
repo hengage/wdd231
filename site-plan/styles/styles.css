@@ -141,6 +141,13 @@ li {
   border-radius: 4px;
 }
 
+.font-sample h3 {
+  margin-top: 0;
+  color: var(--primary-color);
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
 /* Wireframes */
 .wireframe-container {
   display: grid;
@@ -156,10 +163,12 @@ li {
   background-color: var(--light-bg);
 }
 
-.wireframe h4 {
+.wireframe h3 {
   text-align: center;
   color: var(--primary-color);
   margin-bottom: 1rem;
+  font-size: 1.1rem;
+  font-weight: bold;
 }
 
 .wireframe-placeholder {
