@@ -12,6 +12,7 @@
   --light-bg: #f9f9f9;
   --white-color: #ffffff;
   --wireframe-bg: #e9ecef;
+  --black-color: #000000;
 }
 
 /* Base Styles */
@@ -124,7 +125,7 @@ li {
 
 .accent-sample {
   background-color: var(--accent-color);
-  color: var(--text-color);
+  color: var(--black-color);
 }
 
 /* Typography Display */
