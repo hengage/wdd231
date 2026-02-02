@@ -179,35 +179,6 @@ li {
   border-radius: 4px;
 }
 
-.wireframe-fallback {
-  display: none;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 300px;
-  text-align: center;
-  padding: 2rem;
-  color: var(--text-color);
-}
-
-.placeholder-icon {
-  font-size: 3rem;
-  margin-bottom: 1rem;
-  opacity: 0.7;
-}
-
-.wireframe-fallback p {
-  margin: 0.5rem 0;
-  font-weight: bold;
-  color: var(--primary-color);
-}
-
-.wireframe-fallback small {
-  color: var(--text-color);
-  opacity: 0.7;
-  font-size: 0.9rem;
-}
-
 /* Footer */
 footer {
   background-color: var(--primary-color);
