@@ -169,4 +169,48 @@
     height: 180px;
     order: -1;
   }
+
+  /* ========================================
+     JOIN PAGE RESPONSIVE STYLES - START
+     ======================================== */
+
+  /* Join Page Container - Desktop Layout */
+  .join-page-container {
+    flex-direction: row;
+    gap: 4rem;
+  }
+
+  .join-form-section {
+    flex: 2;
+  }
+
+  .membership-cards-section {
+    flex: 1;
+  }
+
+  /* ========================================
+     JOIN PAGE RESPONSIVE STYLES - END
+     ======================================== */
+
+  /* ========================================
+     THANK YOU PAGE RESPONSIVE STYLES - START
+     ======================================== */
+  .application-details {
+    padding: 2.5rem;
+  }
+
+  /* Thank You Details Grid - Desktop */
+  .thankyou-details-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /* Action Buttons - Desktop */
+  .action-buttons {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  /* ========================================
+     THANK YOU PAGE RESPONSIVE STYLES - END
+     ======================================== */
 }
