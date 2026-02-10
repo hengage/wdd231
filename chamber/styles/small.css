@@ -1,7 +1,7 @@
 :root {
   /* Primary brand colors */
-  --color-primary: #4caf50; /* green - use for borders/accents only */
-  --color-primary-dark: #1b5e20; /* darkest green - WCAG AAA compliant for text */
+  --color-primary: #4caf50;
+  --color-primary-dark: #1b5e20;
   --color-primary-light: #c8e6c9;
 
   /* Neutral palette */
@@ -1270,12 +1270,12 @@ footer .project-info {
 
 /* No hover effects on mobile */
 .discover-card figcaption {
-  display: none; /* Hide figcaption, h2 already shows name */
+  display: none;
 }
 
 .discover-card address {
   font-style: normal;
-  color: var(--color-text-light);
+  color: var(--color-text);
   margin-bottom: 1rem;
   font-size: 0.9rem;
 }
@@ -1288,7 +1288,7 @@ footer .project-info {
 
 .discover-link {
   display: inline-block;
-  background-color: var(--color-primary);
+  background-color: var(--darkslategray);
   color: var(--color-bg-white);
   padding: 0.8rem 1.5rem;
   text-decoration: none;
@@ -1299,7 +1299,8 @@ footer .project-info {
 }
 
 .discover-link:hover {
-  background-color: var(--color-primary-dark);
+  background-color: var(--color-text);
+  color: var(--color-bg-white);
   transform: translateY(-2px);
 }
 
