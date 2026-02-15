@@ -2,15 +2,15 @@
 
 ## Preflight Setup
 
-- [ ] Working branch is `feature/final-project`
-- [ ] Project folder is `final-project/`
-- [ ] Core folders exist: `images/`, `styles/`, `scripts/`, `data/`
+- [x] Working branch is `feature/final-project`
+- [x] Project folder is `final-project/`
+- [x] Core folders exist: `images/`, `styles/`, `scripts/`, `data/`
 - [ ] Required pages exist:
-  - [ ] `index.html`
-  - [ ] `vocabulary.html`
+  - [x] `index.html`
+  - [x] `vocabulary.html`
   - [ ] `resources.html`
-  - [ ] `quiz.html`
-  - [ ] `result.html`
+  - [x] `quiz.html`
+  - [x] `result.html`
   - [ ] `attributions.html`
 
 ## 1. Page Audits (20 pts)
@@ -41,10 +41,10 @@
 
 ## 5. Responsive Menu (5 pts)
 
-- [ ] Hamburger menu appears and works on small screens
-- [ ] Larger screens use Flex-based navigation layout
-- [ ] Wayfinding is implemented (active page indication)
-- [ ] Menu is keyboard accessible with visible focus
+- [x] Hamburger menu appears and works on small screens
+- [x] Larger screens use Flex-based navigation layout
+- [x] Wayfinding is implemented (active page indication)
+- [x] Menu is keyboard accessible with visible focus
 
 ## 6. Layouts (5 pts)
 
@@ -54,35 +54,35 @@
 
 ## 7. Form Action Page (5 pts)
 
-- [ ] `quiz.html` includes a valid form with labels and required fields
-- [ ] Form submits via URL search params to `result.html`
-- [ ] `result.html` displays submitted form values correctly
-- [ ] `result.html` shows check result (correct vs incorrect meaning)
+- [x] `quiz.html` includes a valid form with labels and required fields
+- [x] Form submits via URL search params to `result.html`
+- [x] `result.html` displays submitted form values correctly
+- [x] `result.html` shows check result (correct vs incorrect meaning)
 
 ## 8. Displayed Data (5 pts)
 
-- [ ] Dynamic data is displayed using JavaScript
-- [ ] Data source provides 15+ items with 4+ fields each
-- [ ] Data render uses template literals
-- [ ] At least one array method is used (`map`, `filter`, etc.)
-- [ ] User interaction updates displayed data (search/filter/view)
+- [x] Dynamic data is displayed using JavaScript
+- [x] Data source provides 15+ items with 4+ fields each
+- [x] Data render uses template literals
+- [x] At least one array method is used (`map`, `filter`, etc.)
+- [x] User interaction updates displayed data (search/filter/view)
 
 ## 9. Local Storage (3 pts)
 
-- [ ] `localStorage` is used to store user state/value
-- [ ] Stored value is read back and applied on page load
+- [x] `localStorage` is used to store user state/value
+- [x] Stored value is read back and applied on page load
 
 ## 10. Modal Dialog (4 pts)
 
-- [ ] At least one modal dialog structure is implemented
-- [ ] Modal opens/closes via clear controls
+- [x] At least one modal dialog structure is implemented
+- [x] Modal opens/closes via clear controls
 - [ ] Modal is keyboard accessible
 
 ## 11. JavaScript (10 pts)
 
-- [ ] Evidence of DOM manipulation
-- [ ] Evidence of array method usage
-- [ ] Evidence of template literals
+- [x] Evidence of DOM manipulation
+- [x] Evidence of array method usage
+- [x] Evidence of template literals
 
 ## 12. Video: JavaScript Functionality (10 pts)
 
@@ -114,8 +114,8 @@
 
 ## Additional Technical Coverage
 
-- [ ] Async `fetch` implemented with `try/catch`
-- [ ] ES modules used (`type="module"`)
+- [x] Async `fetch` implemented with `try/catch`
+- [x] ES modules used (`type="module"`)
 - [ ] Images are optimized and lazy-loaded where appropriate
 - [ ] Each required page stays under 500kB transfer target
 

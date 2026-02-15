@@ -248,3 +248,83 @@ main {
   padding: 1rem;
 }
 /* ===== Vocabulary Page Styles End (vocabulary.html) ===== */
+
+/* ===== Quiz + Result Page Styles Start (quiz.html, result.html) ===== */
+.quiz-card,
+.result-card {
+  background: #fff;
+  border: 1px solid var(--border);
+  padding: 1rem;
+}
+
+.quiz-form {
+  display: grid;
+  gap: 0.85rem;
+}
+
+.quiz-form label {
+  display: grid;
+  gap: 0.35rem;
+  font-weight: 700;
+}
+
+.quiz-form input,
+.quiz-form select,
+.quiz-form button {
+  font: inherit;
+  padding: 0.65rem;
+  border: 1px solid var(--border);
+  border-radius: 0.25rem;
+}
+
+.quiz-form button {
+  background: var(--primary);
+  color: #fff;
+  font-weight: 700;
+}
+
+.result-card p {
+  margin: 0 0 0.7rem;
+}
+
+.result-banner {
+  margin: 0 0 1rem;
+  padding: 0.9rem;
+  border-radius: 0.35rem;
+  border: 2px solid transparent;
+  font-size: 1.05rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
+.status-correct {
+  color: #1b5e20;
+  font-weight: 700;
+}
+
+.status-wrong {
+  color: #b71c1c;
+  font-weight: 700;
+}
+
+.status-neutral {
+  color: #374151;
+  font-weight: 700;
+}
+
+.result-banner.status-correct {
+  background: #e8f5e9;
+  border-color: #1b5e20;
+}
+
+.result-banner.status-wrong {
+  background: #ffebee;
+  border-color: #b71c1c;
+}
+
+.result-banner.status-neutral {
+  background: #f3f4f6;
+  border-color: #374151;
+}
+/* ===== Quiz + Result Page Styles End (quiz.html, result.html) ===== */

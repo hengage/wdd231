@@ -6,18 +6,18 @@
     <meta name="author" content="Henry Chizoba Udeh" />
     <meta
       name="description"
-      content="German Basics Hub home page with beginner-friendly German learning introduction, core words preview, and starter resources."
+      content="View your vocabulary quiz result and compare your answer with the correct meaning."
     />
 
-    <meta property="og:title" content="German Basics Hub | Home" />
+    <meta property="og:title" content="German Basics Hub | Quiz Result" />
     <meta
       property="og:description"
-      content="Start learning German with beginner-friendly basics, simple vocabulary, and practical next steps."
+      content="See your submitted quiz answer and check if it is correct."
     />
     <meta property="og:type" content="website" />
     <meta
       property="og:url"
-      content="https://hengage.github.io/wdd231/final-project/index.html"
+      content="https://hengage.github.io/wdd231/final-project/result.html"
     />
     <meta
       property="og:image"
@@ -25,22 +25,23 @@
     />
 
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="German Basics Hub | Home" />
+    <meta name="twitter:title" content="German Basics Hub | Quiz Result" />
     <meta
       name="twitter:description"
-      content="Start learning German with beginner-friendly basics, simple vocabulary, and practical next steps."
+      content="See your submitted quiz answer and check if it is correct."
     />
     <meta
       name="twitter:image"
       content="https://hengage.github.io/wdd231/final-project/images/og-image.png"
     />
 
-    <title>German Basics Hub | Home</title>
+    <title>German Basics Hub | Quiz Result</title>
     <link rel="icon" href="images/favicon.ico" />
     <link rel="stylesheet" href="styles/normalize.css" />
     <link rel="stylesheet" href="styles/base.css" />
     <link rel="stylesheet" href="styles/large.css" />
     <script src="scripts/navigation.mjs" type="module"></script>
+    <script src="scripts/result.mjs" type="module"></script>
   </head>
   <body>
     <header>
@@ -65,28 +66,18 @@
     </header>
 
     <main>
-      <section class="hero" aria-label="Introduction">
-        <div>
-          <img
-            src="images/hero-german-basics.svg"
-            alt="German learning visual with beginner vocabulary cards"
-            width="1200"
-            height="630"
-            loading="eager"
-          />
-          <h1>Learn German Basics</h1>
-          <p>Start your journey with simple words and phrases.</p>
-          <a class="cta" href="vocabulary.html">Get Started</a>
-        </div>
+      <section class="page-intro">
+        <h1>Quiz Result</h1>
+        <p>Your submitted answer and the expected meaning are shown below.</p>
       </section>
 
-      <section class="words" aria-label="Basic words preview">
-        <h2>Basic Words</h2>
-        <div class="word-row"><span>Hello</span><span>Hallo</span></div>
-        <div class="word-row"><span>Thank you</span><span>Danke</span></div>
-        <div class="word-row"><span>Goodbye</span><span>Tschuss</span></div>
-        <a class="view-all" href="vocabulary.html">View All</a>
-        <a class="view-all" href="quiz.html">Take Quiz</a>
+      <section class="result-card" aria-label="Vocabulary quiz result">
+        <p id="result-banner" class="result-banner" aria-live="polite"></p>
+        <p><strong>German word:</strong> <span id="result-word"></span></p>
+        <p><strong>Your answer:</strong> <span id="result-answer"></span></p>
+        <p><strong>Correct meaning:</strong> <span id="result-correct"></span></p>
+        <p><strong>Status:</strong> <span id="result-status"></span></p>
+        <a class="view-all" href="quiz.html">Try Another Word</a>
       </section>
     </main>
 
