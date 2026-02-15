@@ -1,6 +1,7 @@
 @media (min-width: 681px) {
   /* ===== Global Desktop Styles Start ===== */
   header {
+    display: flex;
     align-items: center;
     flex-direction: row;
     justify-content: space-between;
@@ -11,12 +12,17 @@
   }
 
   .primary-nav {
+    grid-column: auto;
     width: auto;
     display: block;
   }
 
   .primary-nav ul {
     flex-direction: row;
+    gap: 0.5rem;
+    padding: 0;
+    background: transparent;
+    border: 0;
   }
   /* ===== Global Desktop Styles End ===== */
 
