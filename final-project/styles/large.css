@@ -1,0 +1,20 @@
+@media (min-width: 681px) {
+  header {
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .menu-button {
+    display: none;
+  }
+
+  .primary-nav {
+    width: auto;
+    display: block;
+  }
+
+  .primary-nav ul {
+    flex-direction: row;
+  }
+}
