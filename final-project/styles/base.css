@@ -1,6 +1,7 @@
 /* ===== Global Styles Start ===== */
 :root {
   --primary: #1f4fd8;
+  --primary-dark: #183ca3;
   --secondary: #f2f2f2;
   --accent: #f4b400;
   --text: #1d1d1d;
@@ -338,6 +339,13 @@ main {
   background: var(--primary);
   color: #fff;
   font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.quiz-form button:hover {
+  background: var(--primary-dark);
+  transform: translateY(-1px);
 }
 
 .result-card p {
