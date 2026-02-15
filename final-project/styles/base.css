@@ -6,6 +6,8 @@
   --accent: #f4b400;
   --text: #1d1d1d;
   --border: #d5d5d5;
+  --font-heading: "Poppins", sans-serif;
+  --font-body: "Roboto", sans-serif;
 }
 
 * {
@@ -14,9 +16,18 @@
 
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: var(--font-body);
   color: var(--text);
   background: var(--secondary);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
 }
 
 header,
