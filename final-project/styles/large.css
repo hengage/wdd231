@@ -1,4 +1,5 @@
 @media (min-width: 681px) {
+  /* ===== Global Desktop Styles Start ===== */
   header {
     align-items: center;
     flex-direction: row;
@@ -17,7 +18,9 @@
   .primary-nav ul {
     flex-direction: row;
   }
+  /* ===== Global Desktop Styles End ===== */
 
+  /* ===== Vocabulary Desktop Styles Start (vocabulary.html) ===== */
   .vocab-controls {
     grid-template-columns: 1fr 220px auto;
     align-items: end;
@@ -26,4 +29,5 @@
   .vocabulary-list {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+  /* ===== Vocabulary Desktop Styles End (vocabulary.html) ===== */
 }

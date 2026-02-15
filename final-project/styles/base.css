@@ -1,3 +1,4 @@
+/* ===== Global Styles Start ===== */
 :root {
   --primary: #1f4fd8;
   --secondary: #f2f2f2;
@@ -83,7 +84,18 @@ header {
 .primary-nav[data-open="true"] {
   display: block;
 }
+/* ===== Global Styles End ===== */
 
+/* ===== Shared Footer Styles Start ===== */
+footer {
+  margin-top: 2rem;
+  padding: 1rem;
+  text-align: center;
+  border-top: 1px solid var(--border);
+}
+/* ===== Shared Footer Styles End ===== */
+
+/* ===== Home Page Styles Start (index.html) ===== */
 main {
   padding: 1rem;
 }
@@ -148,14 +160,9 @@ main {
   color: inherit;
   text-decoration: none;
 }
+/* ===== Home Page Styles End (index.html) ===== */
 
-footer {
-  margin-top: 2rem;
-  padding: 1rem;
-  text-align: center;
-  border-top: 1px solid var(--border);
-}
-
+/* ===== Vocabulary Page Styles Start (vocabulary.html) ===== */
 .page-intro {
   margin-bottom: 1rem;
 }
@@ -240,3 +247,4 @@ footer {
 .word-modal article {
   padding: 1rem;
 }
+/* ===== Vocabulary Page Styles End (vocabulary.html) ===== */
