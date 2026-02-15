@@ -8,7 +8,7 @@
 - [ ] Required pages exist:
   - [x] `index.html`
   - [x] `vocabulary.html`
-  - [ ] `resources.html`
+  - [x] `resources.html`
   - [x] `quiz.html`
   - [x] `result.html`
   - [ ] `attributions.html`
