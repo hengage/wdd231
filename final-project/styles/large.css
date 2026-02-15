@@ -17,4 +17,13 @@
   .primary-nav ul {
     flex-direction: row;
   }
+
+  .vocab-controls {
+    grid-template-columns: 1fr 220px auto;
+    align-items: end;
+  }
+
+  .vocabulary-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }

@@ -4,6 +4,10 @@ const primaryNav = document.querySelector("#primary-nav");
 if (menuButton && primaryNav) {
   const desktopQuery = window.matchMedia("(min-width: 681px)");
 
+  /**
+   * Syncs nav visibility and expanded state for mobile/desktop breakpoints.
+   * @returns {void}
+   */
   const syncNavState = () => {
     if (desktopQuery.matches) {
       primaryNav.dataset.open = "true";
@@ -35,9 +39,20 @@ const pageMap = {
 const currentPage = window.location.pathname.split("/").pop();
 const currentKey = pageMap[currentPage];
 
-if (currentKey) {
-  const activeLink = document.querySelector(`a[data-page="${currentKey}"]`);
+/**
+ * Marks the matching nav link with aria-current for wayfinding.
+ * @param {string} key
+ * @returns {void}
+ */
+const setActiveNavLink = (key) => {
+  if (!key) {
+    return;
+  }
+
+  const activeLink = document.querySelector(`a[data-page="${key}"]`);
   if (activeLink) {
     activeLink.setAttribute("aria-current", "page");
   }
-}
+};
+
+setActiveNavLink(currentKey);

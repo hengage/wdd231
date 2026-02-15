@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Henry Chizoba Udeh" />
+    <meta
+      name="description"
+      content="Browse beginner German vocabulary with filters, search, and practical sentence examples."
+    />
+
+    <meta property="og:title" content="German Basics Hub | Vocabulary" />
+    <meta
+      property="og:description"
+      content="Explore beginner German words by category and review practical examples."
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://hengage.github.io/wdd231/final-project/vocabulary.html"
+    />
+    <meta
+      property="og:image"
+      content="https://hengage.github.io/wdd231/final-project/images/og-image.png"
+    />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="German Basics Hub | Vocabulary" />
+    <meta
+      name="twitter:description"
+      content="Explore beginner German words by category and review practical examples."
+    />
+    <meta
+      name="twitter:image"
+      content="https://hengage.github.io/wdd231/final-project/images/og-image.png"
+    />
+
+    <title>German Basics Hub | Vocabulary</title>
+    <link rel="icon" href="images/favicon.ico" />
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/large.css" />
+    <script src="scripts/navigation.mjs" type="module"></script>
+    <script src="scripts/vocabulary.mjs" type="module"></script>
+  </head>
+  <body>
+    <header>
+      <p class="site-title">German Basics Hub</p>
+      <button
+        id="menu-button"
+        class="menu-button"
+        type="button"
+        aria-expanded="false"
+        aria-controls="primary-nav"
+        aria-label="Toggle navigation"
+      >
+        Menu
+      </button>
+      <nav id="primary-nav" class="primary-nav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html" data-page="home">Home</a></li>
+          <li><a href="vocabulary.html" data-page="vocabulary">Vocabulary</a></li>
+          <li><a href="resources.html" data-page="resources">Resources</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-intro">
+        <h1>Vocabulary Library</h1>
+        <p>
+          Review core beginner words. Filter by category, search quickly, and
+          open any item for more detail.
+        </p>
+      </section>
+
+      <section class="vocab-controls" aria-label="Vocabulary filters">
+        <label for="search-word">
+          Search
+          <input
+            id="search-word"
+            name="search-word"
+            type="search"
+            placeholder="Type German or English..."
+          />
+        </label>
+
+        <label for="category-filter">
+          Category
+          <select id="category-filter" name="category-filter">
+            <option value="all">All categories</option>
+          </select>
+        </label>
+
+        <button id="clear-filters" type="button">Clear</button>
+      </section>
+
+      <p id="result-count" class="result-count" aria-live="polite"></p>
+
+      <section id="vocabulary-list" class="vocabulary-list" aria-label="Words list">
+        <p>Loading vocabulary...</p>
+      </section>
+    </main>
+
+    <dialog id="word-modal" class="word-modal">
+      <article>
+        <h2 id="modal-word">Word</h2>
+        <p><strong>Meaning:</strong> <span id="modal-meaning"></span></p>
+        <p><strong>Category:</strong> <span id="modal-category"></span></p>
+        <p><strong>Level:</strong> <span id="modal-level"></span></p>
+        <p><strong>Example:</strong> <span id="modal-example"></span></p>
+        <button id="close-modal" type="button">Close</button>
+      </article>
+    </dialog>
+
+    <footer>
+      <p>&copy; 2026 Henry Chizoba Udeh | German Basics Hub</p>
+    </footer>
+  </body>
+</html>
