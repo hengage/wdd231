@@ -166,6 +166,23 @@ footer {
   text-align: center;
   border-top: 1px solid var(--border);
 }
+footer .video-link {
+  display: inline-block;
+  margin-top: 0.4rem;
+  padding: 0.4rem 0.8rem;
+  border-radius: 0.35rem;
+  border: 1px solid var(--primary);
+  background: var(--surface-soft);
+  color: var(--primary-dark);
+  font-weight: 700;
+  text-decoration: none;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+footer .video-link:hover {
+  background: var(--primary);
+  color: var(--white);
+}
 /* ===== Shared Footer Styles End ===== */
 
 /* ===== Home Page Styles Start (index.html) ===== */
@@ -562,3 +579,40 @@ main {
   gap: 0.75rem;
 }
 /* ===== Resources Page Styles End (resources.html) ===== */
+
+.presentation-video {
+  margin-top: 1rem;
+  border: 1px solid var(--border);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  background: #fff;
+}
+
+.presentation-video h2 {
+  margin: 0 0 0.4rem;
+  color: var(--primary);
+}
+
+.presentation-video p {
+  margin: 0 0 0.9rem;
+}
+
+.presentation-video .video-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.6rem 0.9rem;
+  border-radius: 0.4rem;
+  border: 1px solid var(--primary);
+  background: var(--surface-soft);
+  color: var(--primary-dark);
+  font-weight: 700;
+  text-decoration: none;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.presentation-video .video-link:hover {
+  background: var(--primary);
+  color: var(--white);
+  transform: translateY(-1px);
+}
