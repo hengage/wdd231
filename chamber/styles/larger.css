@@ -213,4 +213,62 @@
   /* ========================================
      THANK YOU PAGE RESPONSIVE STYLES - END
      ======================================== */
+
+  /* ========================================
+     DISCOVER PAGE RESPONSIVE STYLES - START
+     ======================================== */
+
+  /* Medium Screens (641px to 1024px) */
+  @media (min-width: 641px) and (max-width: 1024px) {
+    .discover-grid {
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas:
+        "card1 card2"
+        "card3 card4"
+        "card5 card6"
+        "card7 card8";
+      gap: 2rem;
+      padding: 0 2rem;
+    }
+
+    .discover-card img {
+      transition: transform 0.3s ease;
+    }
+
+    .discover-card img:hover {
+      transform: scale(1.05);
+    }
+  }
+
+  /* Large Screens (1025px and above) */
+  @media (min-width: 1025px) {
+    .discover-grid {
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-areas:
+        "card1 card2 card3"
+        "card4 card5 card6"
+        "card7 card8 .";
+      gap: 2rem;
+      padding: 0 2rem;
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+
+    .discover-card img {
+      transition: transform 0.3s ease, filter 0.3s ease;
+    }
+
+    .discover-card img:hover {
+      transform: scale(1.1);
+      filter: brightness(1.1);
+    }
+
+    .discover-content-section {
+      margin: 3rem 0;
+    }
+  }
+
+  /* ========================================
+     DISCOVER PAGE RESPONSIVE STYLES - END
+     ======================================== */
 }
