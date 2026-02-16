@@ -1,0 +1,226 @@
+[
+  {
+    "id": 1,
+    "german": "Hallo",
+    "english": "Hello",
+    "category": "Greetings",
+    "level": "A1",
+    "example": "Hallo, wie geht's?"
+  },
+  {
+    "id": 2,
+    "german": "Guten Morgen",
+    "english": "Good morning",
+    "category": "Greetings",
+    "level": "A1",
+    "example": "Guten Morgen, Anna."
+  },
+  {
+    "id": 3,
+    "german": "Danke",
+    "english": "Thank you",
+    "category": "Politeness",
+    "level": "A1",
+    "example": "Danke fur deine Hilfe."
+  },
+  {
+    "id": 4,
+    "german": "Bitte",
+    "english": "Please / You're welcome",
+    "category": "Politeness",
+    "level": "A1",
+    "example": "Eine Tasse Kaffee, bitte."
+  },
+  {
+    "id": 5,
+    "german": "Entschuldigung",
+    "english": "Excuse me / Sorry",
+    "category": "Politeness",
+    "level": "A1",
+    "example": "Entschuldigung, wo ist der Bahnhof?"
+  },
+  {
+    "id": 6,
+    "german": "Ja",
+    "english": "Yes",
+    "category": "Basics",
+    "level": "A1",
+    "example": "Ja, das ist richtig."
+  },
+  {
+    "id": 7,
+    "german": "Nein",
+    "english": "No",
+    "category": "Basics",
+    "level": "A1",
+    "example": "Nein, ich habe keine Zeit."
+  },
+  {
+    "id": 8,
+    "german": "Ich heisse",
+    "english": "My name is",
+    "category": "Introductions",
+    "level": "A1",
+    "example": "Ich heisse Henry."
+  },
+  {
+    "id": 9,
+    "german": "Wie heisst du?",
+    "english": "What is your name?",
+    "category": "Introductions",
+    "level": "A1",
+    "example": "Wie heisst du?"
+  },
+  {
+    "id": 10,
+    "german": "Ich komme aus",
+    "english": "I come from",
+    "category": "Introductions",
+    "level": "A1",
+    "example": "Ich komme aus Nigeria."
+  },
+  {
+    "id": 11,
+    "german": "Wasser",
+    "english": "Water",
+    "category": "Food",
+    "level": "A1",
+    "example": "Ich mochte Wasser."
+  },
+  {
+    "id": 12,
+    "german": "Brot",
+    "english": "Bread",
+    "category": "Food",
+    "level": "A1",
+    "example": "Das Brot ist frisch."
+  },
+  {
+    "id": 13,
+    "german": "Kaffee",
+    "english": "Coffee",
+    "category": "Food",
+    "level": "A1",
+    "example": "Trinkst du Kaffee?"
+  },
+  {
+    "id": 14,
+    "german": "Wo?",
+    "english": "Where?",
+    "category": "Questions",
+    "level": "A1",
+    "example": "Wo ist die Schule?"
+  },
+  {
+    "id": 15,
+    "german": "Wann?",
+    "english": "When?",
+    "category": "Questions",
+    "level": "A1",
+    "example": "Wann beginnt der Kurs?"
+  },
+  {
+    "id": 16,
+    "german": "Wie viel?",
+    "english": "How much?",
+    "category": "Questions",
+    "level": "A1",
+    "example": "Wie viel kostet das?"
+  },
+  {
+    "id": 17,
+    "german": "Guten Abend",
+    "english": "Good evening",
+    "category": "Greetings",
+    "level": "A1",
+    "example": "Guten Abend, Herr Muller."
+  },
+  {
+    "id": 18,
+    "german": "Auf Wiedersehen",
+    "english": "Goodbye",
+    "category": "Greetings",
+    "level": "A1",
+    "example": "Auf Wiedersehen und bis morgen."
+  },
+  {
+    "id": 19,
+    "german": "Sprechen Sie Englisch?",
+    "english": "Do you speak English?",
+    "category": "Questions",
+    "level": "A1",
+    "example": "Entschuldigung, sprechen Sie Englisch?"
+  },
+  {
+    "id": 20,
+    "german": "Ich verstehe nicht",
+    "english": "I do not understand",
+    "category": "Basics",
+    "level": "A1",
+    "example": "Langsam bitte, ich verstehe nicht."
+  },
+  {
+    "id": 21,
+    "german": "Heute",
+    "english": "Today",
+    "category": "Time",
+    "level": "A1",
+    "example": "Heute habe ich Deutschunterricht."
+  },
+  {
+    "id": 22,
+    "german": "Morgen",
+    "english": "Tomorrow",
+    "category": "Time",
+    "level": "A1",
+    "example": "Morgen lerne ich neue Worter."
+  },
+  {
+    "id": 23,
+    "german": "Familie",
+    "english": "Family",
+    "category": "People",
+    "level": "A1",
+    "example": "Meine Familie ist gross."
+  },
+  {
+    "id": 24,
+    "german": "Freund",
+    "english": "Friend",
+    "category": "People",
+    "level": "A1",
+    "example": "Mein Freund wohnt in Berlin."
+  },
+  {
+    "id": 25,
+    "german": "Buch",
+    "english": "Book",
+    "category": "School",
+    "level": "A1",
+    "example": "Das Buch ist interessant."
+  },
+  {
+    "id": 26,
+    "german": "Lehrer",
+    "english": "Teacher",
+    "category": "School",
+    "level": "A1",
+    "example": "Der Lehrer erklart die Grammatik."
+  },
+  {
+    "id": 27,
+    "german": "Bahnhof",
+    "english": "Train station",
+    "category": "Travel",
+    "level": "A2",
+    "example": "Der Bahnhof ist in der Stadtmitte."
+  },
+  {
+    "id": 28,
+    "german": "Fahrkarte",
+    "english": "Ticket",
+    "category": "Travel",
+    "level": "A2",
+    "example": "Ich kaufe eine Fahrkarte nach Munchen."
+  }
+]

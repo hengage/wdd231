@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Henry Chizoba Udeh" />
+    <meta
+      name="description"
+      content="Take a quick German vocabulary check by entering the meaning of a selected German word."
+    />
+
+    <meta property="og:title" content="German Basics Hub | Vocabulary Quiz" />
+    <meta
+      property="og:description"
+      content="Test your beginner German vocabulary and check your answer instantly."
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://hengage.github.io/wdd231/final-project/quiz.html"
+    />
+    <meta
+      property="og:image"
+      content="https://hengage.github.io/wdd231/final-project/images/og-image.png"
+    />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="German Basics Hub | Vocabulary Quiz" />
+    <meta
+      name="twitter:description"
+      content="Test your beginner German vocabulary and check your answer instantly."
+    />
+    <meta
+      name="twitter:image"
+      content="https://hengage.github.io/wdd231/final-project/images/og-image.png"
+    />
+
+    <title>German Basics Hub | Vocabulary Quiz</title>
+    <link rel="icon" href="images/favicon.ico" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/large.css" />
+    <script src="scripts/navigation.mjs" type="module"></script>
+    <script src="scripts/quiz.mjs" type="module"></script>
+  </head>
+  <body>
+    <header>
+      <a class="site-title" href="index.html">German Basics Hub</a>
+      <button
+        id="menu-button"
+        class="menu-button"
+        type="button"
+        aria-expanded="false"
+        aria-controls="primary-nav"
+        aria-label="Toggle navigation"
+      >
+        <span class="menu-icon" aria-hidden="true">&#9776;</span>
+        <span class="menu-close" aria-hidden="true">&times;</span>
+        <span class="menu-label">Toggle navigation</span>
+      </button>
+      <nav id="primary-nav" class="primary-nav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html" data-page="home">Home</a></li>
+          <li><a href="vocabulary.html" data-page="vocabulary">Vocabulary</a></li>
+          <li><a href="resources.html" data-page="resources">Resources</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-intro">
+        <h1>Vocabulary Check</h1>
+        <p>Select a German word and type its English meaning.</p>
+      </section>
+
+      <section class="quiz-card" aria-label="Vocabulary quiz form">
+        <form action="result.html" method="get" class="quiz-form">
+          <label for="germanWord">
+            German word
+            <select id="germanWord" name="germanWord" required>
+              <option value="">Select a word</option>
+            </select>
+          </label>
+
+          <label for="userMeaning">
+            Your meaning
+            <input
+              id="userMeaning"
+              name="userMeaning"
+              type="text"
+              placeholder="Type the English meaning"
+              required
+            />
+          </label>
+
+          <button type="submit">Check Answer</button>
+        </form>
+        <p>
+          <a class="view-all" href="vocabulary.html">Back to Vocabulary</a>
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-info">
+        <p>&copy; 2026 Henry Chizoba Udeh | German Basics Hub</p>
+        <p>WDD 231: Web Frontend Development I</p>
+      </div>
+      <a
+        class="video-link"
+        href="https://drive.google.com/file/d/1_IMyU0jUneCAzVO_pp8OnDFhsDU4-0EF/view?usp=sharing"
+        target="_blank"
+        rel="noopener noreferrer"
+        >View walkthrough video</a
+      >
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Henry Chizoba Udeh" />
+    <meta
+      name="description"
+      content="German Basics Hub home page with beginner-friendly German learning introduction, core words preview, and starter resources."
+    />
+
+    <meta property="og:title" content="German Basics Hub | Home" />
+    <meta
+      property="og:description"
+      content="Start learning German with beginner-friendly basics, simple vocabulary, and practical next steps."
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://hengage.github.io/wdd231/final-project/index.html"
+    />
+    <meta
+      property="og:image"
+      content="https://hengage.github.io/wdd231/final-project/images/og-image.png"
+    />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="German Basics Hub | Home" />
+    <meta
+      name="twitter:description"
+      content="Start learning German with beginner-friendly basics, simple vocabulary, and practical next steps."
+    />
+    <meta
+      name="twitter:image"
+      content="https://hengage.github.io/wdd231/final-project/images/og-image.png"
+    />
+
+    <title>German Basics Hub | Home</title>
+    <link rel="icon" href="images/favicon.ico" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/large.css" />
+    <script src="scripts/navigation.mjs" type="module"></script>
+  </head>
+  <body>
+    <header>
+      <a class="site-title" href="index.html">German Basics Hub</a>
+      <button
+        id="menu-button"
+        class="menu-button"
+        type="button"
+        aria-expanded="false"
+        aria-controls="primary-nav"
+        aria-label="Toggle navigation"
+      >
+        <span class="menu-icon" aria-hidden="true">&#9776;</span>
+        <span class="menu-close" aria-hidden="true">&times;</span>
+        <span class="menu-label">Toggle navigation</span>
+      </button>
+      <nav id="primary-nav" class="primary-nav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html" data-page="home">Home</a></li>
+          <li><a href="vocabulary.html" data-page="vocabulary">Vocabulary</a></li>
+          <li><a href="resources.html" data-page="resources">Resources</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" aria-label="Introduction">
+        <div>
+          <img
+            src="images/hero-german-basics.svg"
+            alt="German learning visual with beginner vocabulary cards"
+            width="1200"
+            height="630"
+            loading="eager"
+          />
+          <h1>Learn German Basics</h1>
+          <p>Start your journey with simple words and phrases.</p>
+          <a class="cta" href="vocabulary.html">Get Started</a>
+        </div>
+      </section>
+
+      <section class="words" aria-label="Basic words preview">
+        <h2>Basic Words</h2>
+        <div class="word-row"><span>Hello</span><span>Hallo</span></div>
+        <div class="word-row"><span>Thank you</span><span>Danke</span></div>
+        <div class="word-row"><span>Goodbye</span><span>Tschuss</span></div>
+        <a class="view-all" href="vocabulary.html">View All</a>
+        <a class="view-all" href="quiz.html">Take Quiz</a>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-info">
+        <p>&copy; 2026 Henry Chizoba Udeh | German Basics Hub</p>
+        <p>WDD 231: Web Frontend Development I</p>
+      </div>
+      <a
+        class="video-link"
+        href="https://drive.google.com/file/d/1_IMyU0jUneCAzVO_pp8OnDFhsDU4-0EF/view?usp=sharing"
+        target="_blank"
+        rel="noopener noreferrer"
+        >View walkthrough video</a
+      >
+    </footer>
+  </body>
+</html>

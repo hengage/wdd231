@@ -1,0 +1,49 @@
+@media (min-width: 681px) {
+  /* ===== Global Desktop Styles Start ===== */
+  header {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .menu-button {
+    display: none;
+  }
+
+  .primary-nav {
+    grid-column: auto;
+    width: auto;
+    display: block;
+  }
+
+  .primary-nav ul {
+    flex-direction: row;
+    gap: 0.5rem;
+    padding: 0;
+    background: transparent;
+    border: 0;
+  }
+  /* ===== Global Desktop Styles End ===== */
+
+  /* ===== Vocabulary Desktop Styles Start (vocabulary.html) ===== */
+  .vocab-controls {
+    grid-template-columns: 1fr 220px auto;
+    align-items: end;
+  }
+
+  .vocabulary-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  /* ===== Vocabulary Desktop Styles End (vocabulary.html) ===== */
+
+  /* ===== Resources Desktop Styles Start (resources.html) ===== */
+  .resource-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .next-step {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  /* ===== Resources Desktop Styles End (resources.html) ===== */
+}
